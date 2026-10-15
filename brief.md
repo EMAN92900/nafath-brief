@@ -17,10 +17,18 @@ Android restricts access to sensitive data and device features through runtime p
 Resource: Permissions on Android - https://developer.android.com/guide/topics/permissions/overview
 
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries and responses through encrypted HTTPS connections to a DNS resolver. It reduces the ability of observers on local networks to read or alter the domain lookups made for the login service. However, the resolver can still see those queries, while network observers may identify destination IP addresses or other metadata. DoH does not hide all browsing activity or encrypt the login service’s other traffic; HTTPS remains necessary.
+
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 
 ## Cybersecurity
+Phishing-resistant authentication cryptographically binds the login response to the legitimate service or its protected connection, preventing a fake website from reusing it. Multi-factor FIDO2/WebAuthn passkeys with user verification and PIN-protected smart cards using client-authenticated TLS can qualify. Passwords combined with SMS codes, email codes, authenticator-app one-time passwords, or ordinary push approvals do not provide phishing resistance. Attackers may trick users into entering or approving those credentials on fraudulent sites.
 
+Resource: NIST SP 800-63B - Authenticators - https://pages.nist.gov/800-63-4/sp800-63b/authenticators/
 ## Data
+Oman’s Personal Data Protection Law exempts processing by state administrative units when performing their legally assigned duties. The government Personal Data Protection Policy under Circular 6/2024 still governs such processing. Where the law applies, the authority must provide clear processing information, respect personal data rights, maintain processing records, protect information, and report qualifying breaches. Consent or an applicable exception must be assessed, alongside rules for sensitive data and overseas transfers. The authority should confirm which legal requirements apply.
+
+Resource: Governance - Personal Data Protection - https://www.mtcit.gov.om/sectors/governance/personal
 
 ## Misconception in My Track
 
