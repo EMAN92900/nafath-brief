@@ -31,5 +31,7 @@ Oman’s Personal Data Protection Law exempts processing by state administrative
 Resource: Governance - Personal Data Protection - https://www.mtcit.gov.om/sectors/governance/personal
 
 ## Misconception in My Track
+A common misconception in software development is that OAuth 2.0 alone proves who a user is. In reality, OAuth 2.0 mainly delegates access to resources; an access token is not automatically proof of a user’s identity. OpenID Connect adds a standardized authentication layer and an ID token that a client can validate. The OpenID Connect Core specification states under its Abstract: “OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol.” For this project, confusing access tokens with ID tokens could lead to an insecure login design.
 
 ## Open Question
+How will the authority verify that every participating government service validates OpenID Connect ID tokens correctly and grants only the access permissions each service needs?
